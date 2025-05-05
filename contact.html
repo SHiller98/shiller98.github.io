@@ -88,10 +88,10 @@
                 <div class="card">
                     <div class="card-body">
                         <h2 class="h4 mb-4">Kontaktformular</h2>
-                        <form id="contactForm" class="needs-validation" novalidate>
+                        <form id="contactForm" class="needs-validation" action="https://formspree.io/f/mnnddpkg" method="POST" novalidate>
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name *</label>
-                                <input type="text" class="form-control" id="name" required>
+                                <input type="text" class="form-control" id="name" name="name" required>
                                 <div class="invalid-feedback">
                                     Bitte geben Sie Ihren Namen ein.
                                 </div>
@@ -99,7 +99,7 @@
 
                             <div class="mb-3">
                                 <label for="email" class="form-label">E-Mail *</label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input type="email" class="form-control" id="email" name="email" required>
                                 <div class="invalid-feedback">
                                     Bitte geben Sie eine gültige E-Mail-Adresse ein.
                                 </div>
@@ -107,7 +107,7 @@
 
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Betreff *</label>
-                                <input type="text" class="form-control" id="subject" required>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
                                 <div class="invalid-feedback">
                                     Bitte geben Sie einen Betreff ein.
                                 </div>
@@ -115,7 +115,7 @@
 
                             <div class="mb-3">
                                 <label for="message" class="form-label">Nachricht *</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                                 <div class="invalid-feedback">
                                     Bitte geben Sie Ihre Nachricht ein.
                                 </div>
@@ -123,7 +123,7 @@
 
                             <div class="mb-3">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="privacy" required>
+                                    <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
                                     <label class="form-check-label" for="privacy">
                                         Ich stimme der Verarbeitung meiner Daten gemäß der <a href="datenschutz.html">Datenschutzerklärung</a> zu. *
                                     </label>
