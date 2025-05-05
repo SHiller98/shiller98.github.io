@@ -1,1 +1,1 @@
-# shiller98.github.io
+#This is a test project which might later on serve as a website for a Anniversary workshop for Prof. Christiane Tretter. 
