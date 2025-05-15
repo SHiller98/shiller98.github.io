@@ -1,0 +1,125 @@
+\setlength{\unitlength}{0.00087489in}
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+{\renewcommand{\dashlinestretch}{30}
+\begin{picture}(12284,4989)(0,-10)
+\path(4075,3612)(6325,3612)
+\path(6775,3612)(7000,3612)(7000,4512)
+\path(5470,2712)(6325,2712)
+\path(6100,2712)(6100,2937)
+\path(6100,3612)(6100,3387)
+\path(7675,4512)(7675,3612)(7900,3612)
+\path(8350,3612)(8485,3612)
+\path(9520,3612)(9925,3612)(9925,3837)
+\path(9925,4287)(9925,4512)
+\path(10600,4512)(10600,3612)(10825,3612)
+\path(11275,3612)(11500,3612)(11500,3387)
+\path(11500,2937)(11500,2712)(6775,2712)
+\dottedline{45}(6100,4962)(6100,3612)
+\dottedline{45}(6100,2712)(6100,12)
+\dottedline{45}(11500,4962)(11500,3612)
+\dottedline{45}(11500,2712)(11500,12)
+\path(6550,3522)(6550,3747)
+\whiten\path(6580.000,3687.000)(6550.000,3747.000)(6520.000,3687.000)(6580.000,3687.000)
+\path(8125,3522)(8125,3747)
+\whiten\path(8155.000,3687.000)(8125.000,3747.000)(8095.000,3687.000)(8155.000,3687.000)
+\path(7315,4422)(7315,4647)
+\whiten\path(7345.000,4587.000)(7315.000,4647.000)(7285.000,4587.000)(7345.000,4587.000)
+\path(10240,4422)(10240,4647)
+\whiten\path(10270.000,4587.000)(10240.000,4647.000)(10210.000,4587.000)(10270.000,4587.000)
+\path(10015,4062)(9790,4062)
+\whiten\path(9850.000,4092.000)(9790.000,4062.000)(9850.000,4032.000)(9850.000,4092.000)
+\path(6550,2802)(6550,2577)
+\whiten\path(6520.000,2637.000)(6550.000,2577.000)(6580.000,2637.000)(6520.000,2637.000)
+\path(11050,3522)(11050,3747)
+\whiten\path(11080.000,3687.000)(11050.000,3747.000)(11020.000,3687.000)(11080.000,3687.000)
+\path(11410,3162)(11635,3162)
+\whiten\path(11575.000,3132.000)(11635.000,3162.000)(11575.000,3192.000)(11575.000,3132.000)
+\path(475,3612)(3175,3612)
+\path(475,3612)(475,3387)
+\path(475,2937)(475,2712)(700,2712)
+\path(1150,2712)(1375,2712)(1375,462)
+\path(2050,462)(2050,1587)
+\path(2050,2037)(2050,2937)
+\path(2050,2712)(2500,2712)
+\path(2950,2712)(3175,2712)
+\path(3625,2712)(4075,2712)
+\path(4075,2937)(4075,462)
+\path(4075,3612)(4075,3387)
+\path(2050,3612)(2050,3387)
+\path(4750,462)(4750,1362)
+\path(4750,1812)(4750,2712)(4975,2712)
+\path(4660,1587)(4885,1587)
+\whiten\path(4825.000,1557.000)(4885.000,1587.000)(4825.000,1617.000)(4825.000,1557.000)
+\path(1960,1812)(2185,1812)
+\whiten\path(2125.000,1782.000)(2185.000,1812.000)(2125.000,1842.000)(2125.000,1782.000)
+\path(520,3162)(295,3162)
+\whiten\path(355.000,3192.000)(295.000,3162.000)(355.000,3132.000)(355.000,3192.000)
+\path(3400,3522)(3400,3747)
+\whiten\path(3430.000,3687.000)(3400.000,3747.000)(3370.000,3687.000)(3430.000,3687.000)
+\path(925,2802)(925,2577)
+\whiten\path(895.000,2637.000)(925.000,2577.000)(955.000,2637.000)(895.000,2637.000)
+\path(2725,2802)(2725,2577)
+\whiten\path(2695.000,2637.000)(2725.000,2577.000)(2755.000,2637.000)(2695.000,2637.000)
+\path(3400,2802)(3400,2577)
+\whiten\path(3370.000,2637.000)(3400.000,2577.000)(3430.000,2637.000)(3370.000,2637.000)
+\path(5200,2802)(5200,2577)
+\whiten\path(5170.000,2637.000)(5200.000,2577.000)(5230.000,2637.000)(5170.000,2637.000)
+\path(8710,3522)(8710,3747)
+\whiten\path(8740.000,3687.000)(8710.000,3747.000)(8680.000,3687.000)(8740.000,3687.000)
+\path(8935,3612)(9070,3612)
+\path(9295,3522)(9295,3747)
+\whiten\path(9325.000,3687.000)(9295.000,3747.000)(9265.000,3687.000)(9325.000,3687.000)
+\path(1375,687)(1510,687)
+\path(2050,687)(1915,687)
+\path(1690,777)(1690,552)
+\whiten\path(1660.000,612.000)(1690.000,552.000)(1720.000,612.000)(1660.000,612.000)
+\path(4390,777)(4390,552)
+\whiten\path(4360.000,612.000)(4390.000,552.000)(4420.000,612.000)(4360.000,612.000)
+\path(4075,687)(4210,687)
+\path(4750,687)(4615,687)
+\path(4075,3612)(3625,3612)
+\path(11500,3612)(11725,3612)
+\path(11500,2712)(11725,2712)
+\put(11005,3972){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}Toilet}}}}
+\put(11005,3822){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}Ladies}}}}
+\put(6550,3972){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}Toilet}}}}
+\put(6550,3822){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}Gents}}}}
+\put(925,2442){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}Toilet}}}}
+\put(925,2292){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}Gents}}}}
+\put(5200,2442){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}Toilet}}}}
+\put(5200,2292){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}Ladies}}}}
+\put(3040,462){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\rmdefault}{\mddefault}{\updefault}Green}}}}
+\put(3040,237){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\rmdefault}{\mddefault}{\updefault}area}}}}
+\put(8755,462){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\rmdefault}{\mddefault}{\updefault}Yellow}}}}
+\put(8755,237){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\rmdefault}{\mddefault}{\updefault}area}}}}
+\put(10240,4737){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}offices}}}}
+\put(7360,4737){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}offices}}}}
+\put(6550,2337){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}staircase}}}}
+\put(6550,2187){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}(small)}}}}
+\put(9520,4227){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}staircase}}}}
+\put(9520,4077){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}(small)}}}}
+\put(12085,3207){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\rmdefault}{\mddefault}{\updefault}Red}}}}
+\put(12085,2982){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\rmdefault}{\mddefault}{\updefault}area}}}}
+\put(3040,2397){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}2 elevators}}}}
+\put(2500,1842){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}staircase}}}}
+\put(2500,1692){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}(small)}}}}
+\put(430,3252){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}emergency}}}}
+\put(250,2982){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}exit}}}}
+\put(5425,1632){\makebox(0,0)[b]{\smash{{\SetFigFont{9}{10.8}{\rmdefault}{\bfdefault}{\updefault}Sem 03 C}}}}
+\put(3400,4017){\makebox(0,0)[b]{\smash{{\SetFigFont{9}{10.8}{\rmdefault}{\bfdefault}{\updefault}Coffee breaks}}}}
+\put(3400,3867){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\bfdefault}{\updefault}common room}}}}
+\put(8710,3882){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}3 elevators}}}}
+\put(1690,327){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}offices}}}}
+\put(4390,327){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\mddefault}{\updefault}offices}}}}
+\put(5425,1452){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\bfdefault}{\updefault}common room}}}}
+\put(3400,4197){\makebox(0,0)[b]{\smash{{\SetFigFont{9}{10.8}{\rmdefault}{\bfdefault}{\updefault}Sem 03 A}}}}
+\put(2680,3432){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\bfdefault}{\updefault}registration}}}}
+\put(2680,3297){\makebox(0,0)[b]{\smash{{\SetFigFont{8}{9.6}{\rmdefault}{\bfdefault}{\updefault}(monday morning)}}}}
+\end{picture}
+}
