@@ -223,10 +223,9 @@ body {
 }
 
 .container {
-    max-width: 95%;
-    width: 1800px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--space-md);
+    padding: var(--space-md);
 }
 
 .welcome-section {
@@ -600,6 +599,68 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+/* Timetable Styles */
+.day {
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
+}
+
+.day h2 {
+    color: var(--primary);
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-xs);
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.session {
+    display: flex;
+    align-items: center;
+    padding: var(--space-sm);
+    margin-bottom: var(--space-xs);
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.session:hover {
+    background-color: var(--background-alt);
+}
+
+.time {
+    min-width: 120px;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.detail {
+    flex-grow: 1;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.detail.important {
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .session {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xs);
+    }
+    
+    .time {
+        min-width: auto;
+    }
 }
 
 
