@@ -5,7 +5,7 @@
     --primary-light: #534bae;
     --primary-dark: #000051;
     --secondary: #2e7d32;    /* Geändert zu einem eleganten Grün */
-    --accent: #ffd700;      /* Gold */
+    --accent: #ffffff;      /* Gold */
     
     /* Neutral Colors */
     --text-primary: #2c3e50;
@@ -42,6 +42,9 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     background-color: var(--background);
+    width: 95%;
+    max-width: 1800px;
+    margin: 60px auto;
 }
 
 /* Hero Section */
@@ -72,7 +75,8 @@ body {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
+    max-width: 95%;
+    width: 1800px;
     margin: 0 auto;
     padding: 0 var(--space-md);
     text-align: center;
@@ -124,30 +128,37 @@ body {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 95%;
+    width: 1800px;
     margin: 0 auto;
-    padding: 0 var(--space-md);
+    padding: 0 var(--space-sm);
 }
 
 .nav-list {
     display: flex;
-    list-style: none;
+    list-style: none !important;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-list li {
     position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
 }
 
 .nav-list a {
     display: block;
-    padding: var(--space-md);
+    padding: var(--space-sm) var(--space-xl);
     color: var(--text-primary);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .nav-list a:hover,
@@ -167,9 +178,10 @@ body {
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-primary);
-    padding: var(--space-md);
+    padding: var(--space-sm) var(--space-xl);
     cursor: pointer;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .dropdown-trigger:hover {
@@ -186,15 +198,23 @@ body {
     box-shadow: var(--shadow-md);
     border-radius: 4px;
     padding: var(--space-xs) 0;
+    margin: 0;
+    list-style: none !important;
+}
+
+.dropdown-menu li {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu a {
+    padding: var(--space-xs) var(--space-md);
+    font-size: 0.9rem;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
-}
-
-.dropdown-menu a {
-    padding: var(--space-sm) var(--space-md);
-    font-size: 0.9rem;
 }
 
 /* Main Content */
@@ -203,7 +223,8 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 95%;
+    width: 1800px;
     margin: 0 auto;
     padding: 0 var(--space-md);
 }
@@ -269,42 +290,106 @@ body {
 
 /* Footer */
 .main-footer {
-    background: var(--primary-dark);
+    background: #2b3b4b76;  /* Dunkleres, subtileres Blau-Grau statt des sehr dunklen Blaus */
     color: white;
-    padding: var(--space-xl) 0 var(--space-md);
+    padding: var(--space-md) 0;
+    font-size: 0.85rem;
 }
 
 .footer-content {
+    max-width: 95%;
+    width: 1800px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-xl);
-    margin-bottom: var(--space-xl);
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: var(--space-lg);
+    padding: 0 var(--space-md);
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+    height: 100%;  /* Volle Höhe für die Sektion */
 }
 
 .footer-section h4 {
-    color: var(--accent);
-    margin-bottom: var(--space-md);
+    color: white;
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+    font-weight: 500;
+    opacity: 0.9;
+    text-align: left;
+    height: 24px;  /* Feste Höhe für alle Überschriften */
+    display: flex;
+    align-items: center;
 }
 
 .footer-section ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    flex-grow: 1;  /* Füllt den restlichen Platz */
+}
+
+.footer-section ul li {
+    margin-bottom: var(--space-xs);
 }
 
 .footer-section a {
-    color: white;
+    color: rgba(255, 255, 255, 0.6);  /* Etwas transparenter für noch subtilere Links */
     text-decoration: none;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
+    transition: color 0.2s ease;
+    font-size: 0.85rem;
 }
 
 .footer-section a:hover {
-    opacity: 1;
+    color: rgba(255, 255, 255, 0.9);  /* Helleres Hover, aber immer noch subtil */
 }
 
-.footer-bottom {
-    text-align: center;
-    padding-top: var(--space-md);
-    border-top: 1px solid rgba(255,255,255,0.1);
+.footer-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    padding-left: var(--space-md);
+    position: relative;  /* Für absolute Positionierung des Striches */
+}
+
+.footer-logos::before {  /* Neuer Strich als Pseudo-Element */
+    content: '';
+    position: absolute;
+    left: -120px;  /* Strich nach links verschieben */
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(26, 35, 126, 0.1);
+}
+
+.footer-logo {
+    height: 80px;
+    width: auto;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .footer-logos {
+        flex-direction: row;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-left: 0;
+        padding-top: var(--space-md);
+        margin-top: var(--space-md);
+    }
 }
 
 /* Responsive Design */
@@ -321,6 +406,20 @@ body {
     
     .feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0 var(--space-sm);
+    }
+
+    .hero-content,
+    .nav-container,
+    .container,
+    .footer-content {
+        width: 100%;
+        padding: 0 var(--space-sm);
     }
 }
 

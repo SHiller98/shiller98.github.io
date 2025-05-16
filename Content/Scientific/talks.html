@@ -1,431 +1,64 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
-<base href="../..">
-<title>Operator Theory and Approximation 2024</title>
-<link rel="stylesheet" type="text/css" media="all" href="Styles/main.css"/>
-<link rel="stylesheet" type="text/css" media="all" href="Styles/navigation.css"/>
-</head>
-
+<html lang="en">
+<head id="header-placeholder"></head>
+<script>
+    fetch('../../Components/header.html')
+    .then(response => {
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                return response.text();
+    })
+    .then(html => {
+                // Ersetze den Platzhalter durch den geladenen Header
+                document.getElementById('header-placeholder').outerHTML = html;
+    })
+</script>
 <body>
+    <!-- Hero Section -->
+    <nav id="hero-placeholder"></nav>
+    <script>
+        fetch('../../Components/hero.html')
+        .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.text();
+        })
+        .then(html => {
+                    // Ersetze den Platzhalter durch den geladenen Header
+                    document.getElementById('hero-placeholder').outerHTML = html;
+        })
+    </script>
 
-<!---   PAGE HEADING   -------------------------->
+    <!-- Navigation -->
+    <nav id="nav-placeholder"></nav>
+    <script>
+        fetch('../../Components/navigation.html')
+        .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.text();
+        })
+        .then(html => {
+                    // Ersetze den Platzhalter durch den geladenen Header
+                    document.getElementById('nav-placeholder').outerHTML = html;
+        })
+    </script>
 
-<object data="Templates/header.html" 
-        type="text/html" width="1100" height="280"
-        style="overflow:hidden; width: 1100px; height: 280px"></object>
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1>Talks</h1>
+    </main>
 
-<!---   NAVIGATION   ------------------------------>
-
-<table class="navigation">
-<tr>
-<td class="navigation">
-	<a href="index.html">Home</a>
-</td>
-<td class="navigation">
-	<a href="Content/keydates.html">Key<br>Dates</a>
-</td>
-<td class="navigation">
-	<div class="dropdown">
-	<button class="dropbtn-current">Scientific</button>
-	<div class="dropdown-content">
-	<a href="Content/Scientific/program.html">Program</a>
-	<a href="Content/Scientific/participants.html">Participants</a>
-	<a href="Content/Scientific/talks.html">Talks</a>
-	</div>
-	</div>
-</td>
-<td class="navigation">
-	<a href="Content/registration.html">Registration</a>
-</td>
-<td class="navigation">
-	<a href="Content/abstract-submission.html">Abstract<br>submission</a>
-</td>
-<td class="navigation">
-	<div class="dropdown">
-	<button class="dropbtn">Venue</button>
-	<div class="dropdown-content">
-	<a href="Content/Venue/travel.html">Travel</a>
-	<a href="Content/Venue/accommodation.html">Accomodation</a>
-	<a href="Content/Venue/public-transport.html">Public transport in Vienna</a>
-	<a href="Content/Venue/directions.html">Directions at the TU Wien</a>
-	<a href="Content/Venue/conference-dinner.html">Conference Dinner</a>
-	<a href="Content/Venue/guided-tour.html">Guided tour</a>
-	<a href="Content/Venue/restaurants.html">About food</a>
-	</div>
-	</div>
-</td>
-<td class="navigation">
-	<a href="Content/downloads.html">Downloads</a>
-</td>
-</tr>
-</table>
-
-
-
-<!---   TEXTBODY   --------------------------->
-
-<h1>List of talks</h1>
-Here is the list of scheduled talks.
-
-<ul>
-
-<li>
-Abdeljawad Ahmed:
-<em>Approximation with Neural Networks: Impact of Activation Functions</em>
-<br>
-Thursday 17’15 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Abdeljawad.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Alexis Michel:
-<em>Quantum Signal Processing and the nonlinear Fourier Transform</em>
-<br>
-Tuesday 15’00 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Alexis.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Aslanova Nigar:
-<em>On one class eigenvalue problems for fourth order differential operator equation</em>
-<br>
-Monday 17’15 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Aslanova.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Avetisyan Karen:
-<em>Some Bergman type operators and projections on mixed norm and Besov spaces</em>
-<br>
-Thursday 16’45 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Avetisyan.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Barkaoui Yosra:
-<em>Unbounded product of two non negative selfadjoint operators</em>
-<br>
-Monday 16’45 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Barkaoui.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li><li>
-Bessonov Roman:
-<em>Canonical Hamiltonian systems with periodic Weyl functions</em>
-<br>
-Monday 11’45 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Bessonov.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Blower Gordon:
-<em>Linear systems, differentials and determinants</em>
-<br>
-Thursday 14’00 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Blower.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Bračič Janko:
-<em>Ultrainvariant subspaces</em>
-<br>
-Thursday 14’00 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Bracic.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Buchecker Benedikt:
-<em>Extremal polynomials on a Jordan curve or arc</em>
-<br>
-Tuesday 16’45 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Buchecker.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Buchinger Andreas:
-<em>Strong Operator Convergence in Homogenization of PDEs with Nonlocal Coefficients
-</em>
-<br>
-Tuesday 14’30 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Buchinger.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li><li>
-Chen Chung-Chuan:
-<em>Recurrent operators on Orlicz spaces</em>
-<br>
-Monday 15’30 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Chen.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Christiansen Jacob S.:
-<em>Chebyshev polynomials and Widom factors</em>
-<br>
-Tuesday 14’30 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Christiansen.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Dahia Elhadj:
-<em>p-regularity of bilinear Operators between Banach lattices</em>
-<br>
-Thursday 15’00 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Dahia.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Denisov Sergey:
-<em>Strong asymptotics of MOP</em>
-<br>
-Thursday 11’15 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Denisov.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Exner Pavel:
-<em>On time-reversal invariance violation in quantum graphs</em>
-<br>
-Tuesday 10’15 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Exner.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li><li>
-Haimi Antti:
-<em>Zeros of Gaussian Weyl-Heisenberg functions</em>
-<br>
-Thursday 16’45 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Haimi.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Karlovich Yuri:
-<em>Mellin pseudodifferential operators with non-regular symbols and their algebras</em>
-<br>
-Thursday 16’15 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Karlovich.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Kheifets Alexander:
-<em>Automorphic Carathéodory - Julia Theorem and Related Boundary Interpolation</em>
-<br>
-Thursday 16’15 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Kheifets.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Kostenko Aleksey:
-<em>Trace formulas and inverse spectral theory for strings</em>
-<br>
-Monday 14’30 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Kostenko.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Kuijlaars Arno:
-<em>Multiple orthogonal polynomials in random matrix theory</em>
-<br>
-Thursday 9’30 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Kuijlaars.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Langer Matthias:
-<em>Canonical systems, Weyl coefficients and eigenvalues</em>
-<br>
-Friday 11’45 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Langer.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Le Thi Minh Thao:
-<em>Cwikel-Lieb-Rozenblum type inequalities for Hardy-Schrödinger operator</em>
-<br>
-Tuesday 16’45 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Le.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Lemm Marius:
-<em>Spectra of mildly random matrices</em>
-<br>
-Friday 10’00 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Lemm.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Liang Dong:
-<em>Legendre-tau Chebyshev Spectral Method for Maxwell’s Equations with Interfaces and its
-Theoretical Analysis</em>
-<br>
-Tuesday 12’00 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Liang.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Lukić Milivoje:
-<em>Universality limits via canonical systems</em>
-<br>
-Wednesday 10’00 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Lukic.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Ly Hong Hai:
-<em>Stabilization by multiplicative Itô noise for Chafee-Infante equation in perforated domains
-</em>
-<br>
-Tuesday 12’30 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Ly.pdf" target="_blank">Abstract</a>
-<br> <br></li>
-<li>
-Malamud Mark:
-<em>To the Birman-Krein-Visic Theory. Solution to the Birman problem.</em>
-<br>
-Thursday 14’30 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Malamud.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Mantile Andrea:
-<em>Scattering theory with both regular and singular perturbations and applications</em>
-<br>
-Monday 15’00 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Mantile.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Muranova Anna:
-<em>Capacity of graphs over non-Archimedean ordered fields</em>
-<br>
-Monday 15’00 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Muranova.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Nguyen Phuoc-Tai:
-<em>Semiclassical Moser-Trudinger inequalities</em>
-<br>
-Tuesday 16’15 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Nguyen.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Nowaczyk Marlena:
-<em>Spectrum of the Laplace operator on quantum graphs and defects in a graphene lattice
-</em>
-<br>
-Monday 14’30 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Nowaczyk.pdf" target="_blank">Abstract</a><br> <br>
-</li>
-<li>
-Piorkowski Mateusz:
-<em>A finer limit circle/limit point classification for trace class Sturm-Liouville operators
-</em>
-<br>
-Monday 15’30 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Piorkowski.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Reiffenstein Jakob:
-<em>Eigenvalue density of limit circle Jacobi operators and related canonical systems</em>
-<br>
-Monday 16’45 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Reiffenstein.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Rubin Olof:
-<em>Minimal polynomials with prescribed zeros</em>
-<br>
-Tuesday 15’00 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Rubin.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Schwenninger Felix:
-<em>Reproducing kernel theses and Pisier’s example</em>
-<br>
-Thursday 14’30 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Schwenninger.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Sodin Mikhail:
-<em>The Szegő minimum problem.</em>
-<br>
-Monday 10’00 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;<a href="Downloads/Abstracts/Sodin.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Stylianopoulos Nikos:
-<em>Grunsky Operator Connecting Christoffel Functions to Faber Polynomials</em>
-<br>
-Tuesday 16’15 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Stylianopoulos.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Świderski Grzegorz:
-<em>Asymptotic zeros’ distribution of orthogonal polynomials with unbounded recurrence co-
-efficients</em>
-<br>
-Monday 17’15 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Swiderski.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Teng Wentao:
-<em>Imaginary Powers of (k, a)-Generalized Harmonic Oscillator</em>
-<br>
-Thursday 17’15 (HS2) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Teng.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Tretter Christiane:
-<em>Challenges for non-selfadjoint spectral problems in analysis and computation</em>
-<br>
-Tuesday 9’00 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Tretter.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Young Giorgio:
-<em>Rational solutions to the mKdV equation</em>
-<br>Thursday 15’00 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Young.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Yuditskii Peter:
-<em>Periodically modulated rescaling limits and canonical systems with cantor spectrum</em>
-<br>
-Wednesday 11’45 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Yuditskii.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-<li>
-Zinchenko Maxim:
-<em>Chebyshev and Extremal Polynomials</em>
-<br>
-Tuesday 12’00 (HS3) &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="Downloads/Abstracts/Zinchenko.pdf" target="_blank">Abstract</a>
-<br> <br>
-</li>
-
-</ul>
-
-
-
-<!---   PAGE FOOT   --------------------------->
-
-<object data="Templates/footer.html" 
-        type="text/html" width="1100" height="500px"
-        style="overflow:hidden; width: 1100px; height: 500px"></object>
-
+    <!-- Footer -->
+    <footer id="footer-placeholder"></footer>
+    <script>
+        fetch('../../Components/footer.html')
+        .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.text();
+        })
+        .then(html => {
+                    // Ersetze den Platzhalter durch den geladenen Header
+                    document.getElementById('footer-placeholder').outerHTML = html;
+        })
+    </script>
 </body>
 </html>
-
 

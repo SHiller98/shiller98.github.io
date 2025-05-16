@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="header-placeholder"></head>
+<script>
+    fetch('../Components/header.html')
+    .then(response => {
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                return response.text();
+    })
+    .then(html => {
+                // Ersetze den Platzhalter durch den geladenen Header
+                document.getElementById('header-placeholder').outerHTML = html;
+    })
+</script>
+<body>
+    <!-- Hero Section -->
+    <nav id="hero-placeholder"></nav>
+    <script>
+        fetch('../Components/hero.html')
+        .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.text();
+        })
+        .then(html => {
+                    // Ersetze den Platzhalter durch den geladenen Header
+                    document.getElementById('hero-placeholder').outerHTML = html;
+        })
+    </script>
+
+    <!-- Navigation -->
+    <nav id="nav-placeholder"></nav>
+    <script>
+        fetch('../Components/navigation.html')
+        .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.text();
+        })
+        .then(html => {
+                    // Ersetze den Platzhalter durch den geladenen Header
+                    document.getElementById('nav-placeholder').outerHTML = html;
+        })
+    </script>
+
+    <!-- Main Content -->
+    <main class="main-content">
+    <div class="container">
+        <h1>Conference Timetable</h1>
+
+        <!-- Monday -->
+        <div class="day">
+            <h2>Monday, June 2, 2025</h2>
+            <div class="session">
+                <span class="time">13:00-14:00</span>
+                <span class="detail">Registration</span>
+            </div>
+            <div class="session">
+                <span class="time">14:00-14:15</span>
+                <span class="detail">Opening</span>
+            </div>
+            <div class="session">
+                <span class="time">14:15-14:45</span>
+                <span class="detail">Talk Pavel Kurasov</span>
+            </div>
+            <div class="session">
+                <span class="time">14:50-15:20</span>
+                <span class="detail">Talk Peter Semrl</span>
+            </div>
+            <div class="session">
+                <span class="time">15:25-15:55</span>
+                <span class="detail">Talk Frantisek Stampach</span>
+            </div>
+            <div class="session">
+                <span class="time">16:00-16:30</span>
+                <span class="detail">Coffee Break</span>
+            </div>
+            <div class="session">
+                <span class="time">16:30-17:00</span>
+                <span class="detail">Talk Borbala Gerhat</span>
+            </div>
+            <div class="session">
+                <span class="time">17:05-17:35</span>
+                <span class="detail">Talk Petr Siegl</span>
+            </div>
+            <div class="session">
+                <span class="time">17:40-18:10</span>
+                <span class="detail">Talk Jean-Claude Cuenin</span>
+            </div>
+            <div class="session">
+                <span class="time">18:30</span>
+                <span class="detail important">Apero riche</span>
+            </div>
+        </div>
+
+        <!-- Tuesday -->
+        <div class="day">
+            <h2>Tuesday, June 3, 2025</h2>
+            <!-- Add sessions here -->
+            <!-- Shortened for brevity -->
+        </div>
+
+        <!-- Wednesday -->
+        <div class="day">
+            <h2>Wednesday, June 4, 2025</h2>
+            <!-- Add sessions here -->
+            <!-- Shortened for brevity -->
+        </div>
+
+        <!-- Thursday -->
+        <div class="day">
+            <h2>Thursday, June 5, 2025</h2>
+            <!-- Add sessions here -->
+            <!-- Shortened for brevity -->
+        </div>
+    </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-placeholder"></footer>
+    <script>
+        fetch('../Components/footer.html')
+        .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.text();
+        })
+        .then(html => {
+                    // Ersetze den Platzhalter durch den geladenen Header
+                    document.getElementById('footer-placeholder').outerHTML = html;
+        })
+    </script>
+</body>
+</html>
+
