@@ -2,7 +2,7 @@
 <html lang="en">
 <head id="header-placeholder"></head>
 <script>
-    fetch('../../Components/header.html')
+    fetch('../Components/header.html')
     .then(response => {
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 return response.text();
@@ -16,7 +16,7 @@
     <!-- Hero Section -->
     <nav id="hero-placeholder"></nav>
     <script>
-        fetch('../../Components/hero.html')
+        fetch('../Components/hero.html')
         .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     return response.text();
@@ -30,7 +30,7 @@
     <!-- Navigation -->
     <nav id="nav-placeholder"></nav>
     <script>
-        fetch('../../Components/navigation.html')
+        fetch('../Components/navigation.html')
         .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     return response.text();
@@ -43,15 +43,20 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="container">
-            <h1>Downloads</h1>
-        </div>
+    <div class="container">
+        <section class="welcome-section">
+            <h2 style="text-align: left; margin-top: -20px;">Downloads</h2>
+            <p style="text-align: left;">Here you can find the downloads for the conference.</p>
+        </section>
+
+    </div>
+
     </main>
 
     <!-- Footer -->
     <footer id="footer-placeholder"></footer>
     <script>
-        fetch('../../Components/footer.html')
+        fetch('../Components/footer.html')
         .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     return response.text();
@@ -63,3 +68,4 @@
     </script>
 </body>
 </html>
+
