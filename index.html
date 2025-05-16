@@ -1,88 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operator Theory and Approximation 2024</title>
-    <link rel="stylesheet" href="Styles/main.css">
-    <link rel="stylesheet" href="Styles/navigation.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+<head id="header-placeholder"></head>
+<script>
+    fetch('Components/header.html')
+    .then(response => {
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                return response.text();
+    })
+    .then(html => {
+                // Ersetze den Platzhalter durch den geladenen Header
+                document.getElementById('header-placeholder').outerHTML = html;
+    })
+</script>
 <body>
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="conference-title">
-                <span class="title-line">60th Birthday Anniversary Workshop</span>
-                <span class="title-line">for Christiane Tretter</span>
-            </h1>
-            <div class="conference-details">
-                <p class="date">June 2-5, 2025</p>
-                <p class="location">Uni Bern, Bern, Switzerland</p>
-            </div>
-        </div>
-        <div class="hero-pattern"></div>
-    </header>
+    <nav id="hero-placeholder"></nav>
+    <script>
+        fetch('Components/hero.html')
+        .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.text();
+        })
+        .then(html => {
+                    // Ersetze den Platzhalter durch den geladenen Header
+                    document.getElementById('hero-placeholder').outerHTML = html;
+        })
+    </script>
 
     <!-- Navigation -->
-    <nav class="main-nav">
-        <div class="nav-container">
-            <ul class="nav-list">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="Content/keydates.html">Key Dates</a></li>
-                <li class="dropdown">
-                    <button class="dropdown-trigger">Scientific</button>
-                    <ul class="dropdown-menu">
-                        <li><a href="Content/Scientific/program.html">Program</a></li>
-                        <li><a href="Content/Scientific/participants.html">Participants</a></li>
-                        <li><a href="Content/Scientific/talks.html">Talks</a></li>
-                    </ul>
-                </li>
-                <li><a href="Content/registration.html">Registration</a></li>
-                <li><a href="Content/abstract-submission.html">Abstract Submission</a></li>
-                <li class="dropdown">
-                    <button class="dropdown-trigger">Venue</button>
-                    <ul class="dropdown-menu">
-                        <li><a href="Content/Venue/travel.html">Travel</a></li>
-                        <li><a href="Content/Venue/accommodation.html">Accommodation</a></li>
-                        <li><a href="Content/Venue/public-transport.html">Public Transport</a></li>
-                        <li><a href="Content/Venue/directions.html">Directions</a></li>
-                        <li><a href="Content/Venue/conference-dinner.html">Conference Dinner</a></li>
-                        <li><a href="Content/Venue/guided-tour.html">Guided Tour</a></li>
-                        <li><a href="Content/Venue/restaurants.html">About Food</a></li>
-                    </ul>
-                </li>
-                <li><a href="Content/downloads.html">Downloads</a></li>
-            </ul>
-        </div>
-    </nav>
+    <nav id="nav-placeholder"></nav>
+    <script>
+        fetch('Components/navigation.html')
+        .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.text();
+        })
+        .then(html => {
+                    // Ersetze den Platzhalter durch den geladenen Header
+                    document.getElementById('nav-placeholder').outerHTML = html;
+        })
+    </script>
 
     <!-- Main Content -->
     <main class="main-content">
         <div class="container">
             <section class="welcome-section">
-                <h2>Welcome to the 60th birthday anniversary workshop for Christiane Tretter.</h2>
+                <h2>Welcome to the STAMP workshop!</h2>
                 <p class="lead">Join us for an exciting conference on Operator Theory and Mathematical Physics at the Uni Bern.</p>
                 
                 <div class="feature-grid">
                     <div class="feature-card">
-                        <h3>Key Dates</h3>
-                        <p>Important deadlines and dates for the conference</p>
-                        <a href="Content/keydates.html" class="btn">View Dates</a>
+                        <h3>Programme</h3>
+                        <p>Explore the conference schedule and sessions.</p>
+                        <a href="Content/programme.html" class="btn">View Programme</a>
                     </div>
                     
                     <div class="feature-card">
-                        <h3>Program</h3>
-                        <p>Explore the conference schedule and sessions</p>
-                        <a href="Content/Scientific/program.html" class="btn">View Program</a>
+                        <h3>Participants</h3>
+                        <p>See who is coming to the conference.</p>
+                        <a href="Content/Scientific/participants.html" class="btn">View Participants</a>
                     </div>
                     
                     <div class="feature-card">
-                        <h3>Registration</h3>
-                        <p>Register for the conference</p>
-                        <a href="Content/registration.html" class="btn">Register Now</a>
+                        <h3>Talks</h3>
+                        <p>Explore all the exciting talks.</p>
+                        <a href="Content/registration.html" class="btn">View Talks</a>
                     </div>
                 </div>
             </section>
@@ -90,26 +72,17 @@
     </main>
 
     <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>For any questions, please contact the organizers</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="Content/keydates.html">Key Dates</a></li>
-                        <li><a href="Content/registration.html">Registration</a></li>
-                        <li><a href="Content/Venue/travel.html">Travel Information</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Operator Theory and Approximation Conference</p>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer-placeholder"></footer>
+    <script>
+        fetch('Components/footer.html')
+        .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.text();
+        })
+        .then(html => {
+                    // Ersetze den Platzhalter durch den geladenen Header
+                    document.getElementById('footer-placeholder').outerHTML = html;
+        })
+    </script>
 </body>
 </html>
