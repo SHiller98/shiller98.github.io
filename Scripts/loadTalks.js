@@ -40,7 +40,7 @@ function loadTalks() {
         .catch(error => {
             console.error('Error loading talks:', error);
             const container = document.querySelector('.talks-container');
-            container.innerHTML = '<p class="error">Error loading talks. Please try again later.</p>';
+            container.innerHTML = '<p class="error">Error loading talks. Please reload the page.</p>';
         });
 }
 
