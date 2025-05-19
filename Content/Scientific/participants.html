@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head id="header-placeholder"></head>
+<meta charset="UTF-8">
 <script>
     fetch('../../Components/header.html')
     .then(response => {
@@ -8,7 +9,6 @@
                 return response.text();
     })
     .then(html => {
-                // Ersetze den Platzhalter durch den geladenen Header
                 document.getElementById('header-placeholder').outerHTML = html;
     })
 </script>
@@ -22,7 +22,6 @@
                     return response.text();
         })
         .then(html => {
-                    // Ersetze den Platzhalter durch den geladenen Header
                     document.getElementById('hero-placeholder').outerHTML = html;
         })
     </script>
@@ -36,21 +35,23 @@
                     return response.text();
         })
         .then(html => {
-                    // Ersetze den Platzhalter durch den geladenen Header
                     document.getElementById('nav-placeholder').outerHTML = html;
         })
     </script>
 
     <!-- Main Content -->
     <main class="main-content">
-    <div class="container">
-        <section class="welcome-section">
-            <h2 style="text-align: left; margin-top: -20px;">Participants</h2>
-            <p style="text-align: left;">See who is going to attend the conference.</p>
-        </section>
-
-    </div>
-
+        <div class="container">
+            <section class="welcome-section">
+                <h2 style="text-align: left; margin-top: -20px;">Participants</h2>
+                <p style="text-align: left;">See who is going to attend the conference.</p>
+            </section>
+            <section class="participants-section">
+                <div class="participants-list">
+                    <!-- Participants will be loaded here -->
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -62,10 +63,10 @@
                     return response.text();
         })
         .then(html => {
-                    // Ersetze den Platzhalter durch den geladenen Header
                     document.getElementById('footer-placeholder').outerHTML = html;
         })
     </script>
+    <script src="../Scripts/loadParticipants.js"></script>
 </body>
 </html>
 
