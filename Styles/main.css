@@ -51,10 +51,27 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('../Images/Bern.jpeg') center/cover no-repeat;
+    background: url('../Images/Bern.jpg') center/cover no-repeat;
     color: white;
     padding: var(--space-xl) 0;
     overflow: hidden;
+    min-height: 500px;
+}
+
+/* Neuer Style für das Logo */
+.hero-logo {
+    position: absolute;
+    bottom: var(--space-md);
+    right: var(--space-md);
+    width: 200px; /* Anpassbare Größe */
+    height: auto;
+    z-index: 2;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.hero-logo:hover {
+    opacity: 1;
 }
 
 .hero::before {
@@ -64,7 +81,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)); /* Reduzierter Grau-Effekt */
     z-index: 1;
 }
 
@@ -76,11 +93,15 @@ body {
     margin: 0 auto;
     padding: 0 var(--space-md);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px; /* Neue Mindesthöhe */
 }
 
 .conference-title {
     font-family: var(--font-display);
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: var(--space-md);
@@ -99,10 +120,11 @@ body {
 .title-line:last-child {
     color: white;
     opacity: 0.95;
+    font-size: 0.9em;
 }
 
 .conference-details {
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 1.8vw, 1.3rem);
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -391,7 +413,8 @@ body {
 }
 
 .btn:hover {
-    background: var(--primary-dark);
+    background: var(--primary-light);
+    color: white;
 }
 
 /* Timetable Container */
@@ -795,7 +818,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 .participant-card {
     background: var(--background-alt);
-    padding: var(--space-lg);
+    padding: var(--space-md);
     border-radius: 8px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -806,7 +829,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     box-shadow: var(--shadow-md);
 }
 
-.participant-card h3 {
+.participant-card h5 {
     color: var(--primary);
     margin-bottom: var(--space-sm);
     font-family: var(--font-display);
@@ -945,8 +968,8 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 }
 
 .download-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s ease;
     vertical-align: middle;
     background-color: white;
@@ -1072,6 +1095,11 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     gap: var(--space-lg);
 }
 
+.survey-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
 .survey-info {
     flex: 0 0 50%;
 }
@@ -1120,6 +1148,46 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 .survey-link:hover {
     background-color: var(--primary-light);
+    color: white;
+}
+
+/* Committee Cards */
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 200px));
+    gap: var(--space-md);
+    margin: var(--space-sm) 0;
+    justify-content: start;
+}
+
+.committee-card {
+    background: var(--background-alt);
+    padding: var(--space-sm);
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.committee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.committee-name {
+    color: var(--primary);
+    font-family: var(--font-display);
+    font-size: 1em;
+    margin: 0;
+    padding: var(--space-xs) 0;
+    text-align: left;
+}
+
+.committee-role {
+    color: var(--text-secondary);
+    font-size: 0.9em;
+    margin: 0;
+    padding-bottom: var(--space-xs);
+    text-align: left;
 }
 
 
