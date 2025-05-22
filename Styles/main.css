@@ -150,10 +150,11 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 1800px; /* Fixed width matching the body max-width */
+    margin: 0 auto;
 }
 
 .nav-container {
-    max-width: 95%;
     width: 1800px;
     margin: 0 auto;
     padding: 0 var(--space-sm);
@@ -186,9 +187,10 @@ body {
     list-style: none;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    width: 100%;
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .nav-list li {
@@ -196,12 +198,13 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .nav-list a,
 .dropdown-trigger {
     display: block;
-    padding: var(--space-sm) var(--space-xl);
+    padding: var(--space-sm) var(--space-md); /* Reduced padding */
     color: var(--text-primary);
     text-decoration: none;
     font-weight: 500;
