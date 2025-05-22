@@ -39,7 +39,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px; /* Reduced base font size */
     -webkit-text-size-adjust: 100%;
 }
 
@@ -51,18 +51,23 @@ body {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 var(--space-sm);
+    padding: 0 var(--space-xs);
     overflow-x: hidden;
+    transform-origin: top left;
+    transform: scale(0.85); /* Scale down the entire page */
+    min-height: 117.65vh; /* Compensate for the scale (100/0.85) */
 }
 
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
     html {
-        font-size: 14px;
+        font-size: 12px;
     }
     
     body {
         padding: 0 var(--space-xs);
+        transform: scale(0.75); /* Scale down even more on tablets */
+        min-height: 133.33vh; /* Compensate for the scale (100/0.75) */
     }
     
     .container {
@@ -74,33 +79,38 @@ body {
     }
     
     .conference-title {
-        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        font-size: clamp(1.6rem, 3.5vw, 2.2rem);
     }
     
     .conference-details {
-        font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+        font-size: clamp(0.8rem, 1.3vw, 1rem);
     }
 }
 
 @media screen and (max-width: 480px) {
     html {
-        font-size: 12px;
+        font-size: 10px;
+    }
+    
+    body {
+        transform: scale(0.65); /* Scale down even more on mobile */
+        min-height: 153.85vh; /* Compensate for the scale (100/0.65) */
     }
     
     .hero {
-        min-height: 300px;
+        min-height: 250px;
     }
     
     .hero-content {
-        min-height: 300px;
+        min-height: 250px;
     }
     
     .conference-title {
-        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-size: clamp(1.3rem, 2.5vw, 1.8rem);
     }
     
     .conference-details {
-        font-size: clamp(0.8rem, 1.2vw, 1rem);
+        font-size: clamp(0.7rem, 1.1vw, 0.9rem);
     }
 }
 
