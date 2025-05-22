@@ -49,10 +49,11 @@ body {
     line-height: 1.6;
     background-color: var(--background);
     width: 100%;
+    min-width: 800px; /* Added minimum width to prevent menu wrapping */
     max-width: 100%;
     margin: 0 auto;
     padding: 0 var(--space-sm);
-    overflow-x: hidden;
+    overflow-x: auto; /* Changed from hidden to auto to allow horizontal scrolling if needed */
 }
 
 /* Media Queries for Responsive Design */
@@ -192,6 +193,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    min-width: 800px; /* Added minimum width to match body */
 }
 
 .nav-container {
@@ -202,6 +204,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap; /* Prevent text wrapping in nav */
 }
 
 /* Hamburger Menu Button */
