@@ -731,25 +731,23 @@ body {
 /* Mobile Footer Styles */
 @media screen and (max-width: 800px) {
     .footer-content {
-        grid-template-columns: 1fr;
-        gap: var(--space-lg);
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
         padding: 0 var(--space-md);
     }
 
     .footer-section {
-        padding: var(--space-sm) 0;
-        border-bottom: 1px solid rgba(82, 115, 158, 0.2);
-    }
-
-    .footer-section:last-child {
-        border-bottom: none;
+        padding: var(--space-xs) 0;
     }
 
     .footer-logos {
-        flex-direction: column;
-        align-items: flex-start;
+        grid-column: span 2;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         gap: var(--space-md);
-        padding-left: 0;
+        padding: var(--space-sm) 0;
+        border-top: 1px solid rgba(82, 115, 158, 0.2);
     }
 
     .footer-logos::before {
@@ -757,7 +755,15 @@ body {
     }
 
     .footer-logo {
-        height: 60px;
+        height: 50px;
+    }
+
+    .footer-section h4 {
+        font-size: 0.9rem;
+    }
+
+    .footer-section a {
+        font-size: 0.8rem;
     }
 }
 
