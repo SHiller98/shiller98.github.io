@@ -40,6 +40,8 @@
 
 html {
     min-width: 1200px; /* Minimum width before zooming starts */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -47,8 +49,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     background-color: var(--background);
-    width: 95%;
-    max-width: 1800px;
+    width: 1800px; /* Fixed width */
     margin: 60px auto;
     transform-origin: top left;
 }
@@ -57,7 +58,7 @@ body {
 @media screen and (max-width: 1200px) {
     body {
         transform: scale(calc(100vw / 1200));
-        width: calc(100% / (100vw / 1200));
+        width: 1800px; /* Keep fixed width */
         height: calc(100vh / (100vw / 1200));
     }
 }
@@ -150,8 +151,16 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 1800px; /* Fixed width matching the body max-width */
+    width: 1800px; /* Match body width */
     margin: 0 auto;
+    transform-origin: top left;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-nav {
+        transform: scale(calc(100vw / 1200));
+        width: 1800px;
+    }
 }
 
 .nav-container {
