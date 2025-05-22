@@ -62,6 +62,17 @@ body {
     
     body {
         padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .main-nav {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .nav-container {
+        width: 95%;
+        min-width: 800px;
     }
     
     .container {
@@ -196,10 +207,13 @@ body {
     top: 0;
     z-index: 1000;
     width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling for nav if needed */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 .nav-container {
     width: 95%;
+    min-width: 800px; /* Minimum width to ensure all nav items fit */
     margin: 0 auto;
     padding: 0 var(--space-sm);
     display: flex;
