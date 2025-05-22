@@ -123,7 +123,7 @@ MathJax = {
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>
-    fetch('../../Components/header.html')
+    fetch('https://christianetretter.github.io/STAMP/Components/header.html')
     .then(response => {
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 return response.text();
@@ -136,7 +136,7 @@ MathJax = {
     <!-- Hero Section -->
     <nav id="hero-placeholder"></nav>
     <script>
-        fetch('../../Components/hero.html')
+        fetch('https://christianetretter.github.io/STAMP/Components/hero.html')
         .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     return response.text();
@@ -149,7 +149,7 @@ MathJax = {
     <!-- Navigation -->
     <nav id="nav-placeholder"></nav>
     <script>
-        fetch('../../Components/navigation.html')
+        fetch('https://christianetretter.github.io/STAMP/Components/navigation.html')
         .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     return response.text();
@@ -163,8 +163,9 @@ MathJax = {
     <main class="main-content">
         <div class="container">
             <section class="welcome-section">
+                <h1>This site is still experiencing some issues with rendering correctly. If you can't properly see the talks, please check back soon!</h1>
                 <h2 style="text-align: left; margin-top: -20px;">Talks</h2>
-                <p style="text-align: left;">Listed below are all the talks given at the conference. Click the dropdown menu to view the abstract of the talk or download the book of abstracts <a href="../../Downloads/abstracts.pdf">here</a>.</p>
+                <p style="text-align: left;">Listed below are all the talks given at the conference. Click the dropdown menu to view the abstract of the talk or download the book of abstracts <a href="https://christianetretter.github.io/STAMP/Downloads/abstracts.pdf">here</a>.</p>
             </section>
 
             <div class="talks-container">
@@ -176,7 +177,7 @@ MathJax = {
     <!-- Footer -->
     <footer id="footer-placeholder"></footer>
     <script>
-        fetch('../../Components/footer.html')
+        fetch('https://christianetretter.github.io/STAMP/Components/footer.html')
         .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     return response.text();
@@ -185,6 +186,6 @@ MathJax = {
                     document.getElementById('footer-placeholder').outerHTML = html;
         })
     </script>
-    <script src="../../Scripts/loadTalks.js"></script>
+    <script src="https://christianetretter.github.io/STAMP/Scripts/loadTalks.js"></script>
 </body>
 </html>
