@@ -650,7 +650,6 @@ body {
     padding: var(--space-md) 0;
     font-size: 0.85rem;
     margin-top: auto;
-    width: 100%;
 }
 
 .footer-content {
@@ -658,7 +657,7 @@ body {
     width: 1800px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Changed to 5 equal columns */
+    grid-template-columns: repeat(3, 1fr) auto;
     gap: var(--space-xl);
     padding: 0 var(--space-lg);
 }
@@ -706,59 +705,59 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     gap: var(--space-xl);
+    padding-left: var(--space-lg);
     position: relative;
-    height: 100%;
 }
 
 .footer-logos::before {
     content: '';
     position: absolute;
-    left: -30px; /* Adjusted position */
+    left: 0;
     top: 0;
     bottom: 0;
     width: 1px;
     background: #52739e;
-    opacity: 1;
+    opacity: 0.3;
 }
 
 .footer-logo {
-    height: auto;
-    max-height: 80px;
+    height: 80px;
     width: auto;
-    max-width: 100%;
     opacity: 0.7;
     transition: opacity 0.2s ease;
-    object-fit: contain;
 }
 
-/* Media query for footer responsiveness */
-@media screen and (max-width: 1200px) {
-    .footer-content {
-        grid-template-columns: repeat(3, 1fr);
-        gap: var(--space-lg);
-    }
-    
-    .footer-logos {
-        grid-column: span 3;
-        justify-content: space-around;
-    }
-    
-    .footer-logos::before {
-        display: none;
-    }
-}
-
+/* Mobile Footer Styles */
 @media screen and (max-width: 800px) {
     .footer-content {
         grid-template-columns: 1fr;
-        gap: var(--space-md);
+        gap: var(--space-lg);
+        padding: 0 var(--space-md);
     }
-    
+
+    .footer-section {
+        padding: var(--space-sm) 0;
+        border-bottom: 1px solid rgba(82, 115, 158, 0.2);
+    }
+
+    .footer-section:last-child {
+        border-bottom: none;
+    }
+
     .footer-logos {
-        grid-column: span 1;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+        padding-left: 0;
+    }
+
+    .footer-logos::before {
+        display: none;
+    }
+
+    .footer-logo {
+        height: 60px;
     }
 }
 
@@ -1309,5 +1308,4 @@ th,td{
     padding-top: 0;
     top: 6.4em; /* Adjusted position for second role */
 }
-
 
