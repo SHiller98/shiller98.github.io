@@ -650,6 +650,7 @@ body {
     padding: var(--space-md) 0;
     font-size: 0.85rem;
     margin-top: auto;
+    width: 100%;
 }
 
 .footer-content {
@@ -657,7 +658,7 @@ body {
     width: 1800px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr) auto;
+    grid-template-columns: repeat(5, 1fr); /* Changed to 5 equal columns */
     gap: var(--space-xl);
     padding: 0 var(--space-lg);
 }
@@ -705,15 +706,16 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: var(--space-xl);
-    padding-left: var(--space-lg);
     position: relative;
+    height: 100%;
 }
 
 .footer-logos::before {
     content: '';
     position: absolute;
-    left: -60px;
+    left: -30px; /* Adjusted position */
     top: 0;
     bottom: 0;
     width: 1px;
@@ -722,10 +724,42 @@ body {
 }
 
 .footer-logo {
-    height: 80px;
+    height: auto;
+    max-height: 80px;
     width: auto;
+    max-width: 100%;
     opacity: 0.7;
     transition: opacity 0.2s ease;
+    object-fit: contain;
+}
+
+/* Media query for footer responsiveness */
+@media screen and (max-width: 1200px) {
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-lg);
+    }
+    
+    .footer-logos {
+        grid-column: span 3;
+        justify-content: space-around;
+    }
+    
+    .footer-logos::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .footer-logos {
+        grid-column: span 1;
+        flex-wrap: wrap;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
