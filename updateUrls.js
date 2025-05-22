@@ -6,7 +6,7 @@ const mode = process.argv[2] || 'local';
 
 // Set the base URL based on mode
 const baseUrl = mode === 'prod' 
-    ? 'https://christianetretter.github.io/STAMP/'
+    ? 'https://shiller98.github.io/'
     : '';
 
 console.log(`Running in ${mode} mode with baseUrl: ${baseUrl || '(empty)'}`);
@@ -45,7 +45,7 @@ function updateFile(filePath) {
             let regex = new RegExp('(href|src)\s*=\s*"' + baseUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
             content = content.replace(regex, function(match, p1) { replacements++; return p1 + '="'; });
             // Entferne baseUrl in fetch-Calls
-            content = content.replace(/fetch\('https:\/\/christianetretter\.github\.io\/STAMP\/Components\//g, function(match) { replacements++; return "fetch('Components/"; });
+            content = content.replace(/fetch\('https:\/\/shiller98\.github\.io\/Components\//g, function(match) { replacements++; return "fetch('Components/"; });
         } else if (filePath.endsWith('.css')) {
             // Ersetze url("baseUrl...") durch url("...")
             let regex = new RegExp('url\\(([' + "'\"`" + '])' + baseUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
