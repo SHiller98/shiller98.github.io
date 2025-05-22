@@ -60,24 +60,39 @@ body {
 @media screen and (max-width: 800px) {
     html {
         font-size: 14px;
-        zoom: 0.6; /* Increased zoom out on smaller screens */
-        -moz-transform: scale(0.6); /* Firefox */
+        zoom: 0.6;
+        -moz-transform: scale(0.6);
         -moz-transform-origin: 0 0;
-        -o-transform: scale(0.6); /* Opera */
+        -o-transform: scale(0.6);
         -o-transform-origin: 0 0;
-        -webkit-transform: scale(0.6); /* Safari and Chrome */
+        -webkit-transform: scale(0.6);
         -webkit-transform-origin: 0 0;
-        transform: scale(0.6); /* Standard */
+        transform: scale(0.6);
         transform-origin: 0 0;
+        width: 166.67%; /* 100% / 0.6 to compensate for the zoom */
     }
     
     body {
         padding: 0 var(--space-xs);
         overflow-x: hidden;
+        width: 166.67%; /* 100% / 0.6 to compensate for the zoom */
+    }
+    
+    .nav-container {
+        width: 166.67%; /* 100% / 0.6 to compensate for the zoom */
+    }
+    
+    .hero-content {
+        width: 166.67%; /* 100% / 0.6 to compensate for the zoom */
+    }
+    
+    .footer-content {
+        width: 166.67%; /* 100% / 0.6 to compensate for the zoom */
     }
     
     .container {
         padding: var(--space-xs);
+        width: 166.67%; /* 100% / 0.6 to compensate for the zoom */
     }
     
     .hero-content {
