@@ -38,28 +38,15 @@
     box-sizing: border-box;
 }
 
-html {
-    width: 100%;
-    overflow-x: hidden;
-}
-
 body {
     font-family: var(--font-primary);
     color: var(--text-primary);
     line-height: 1.6;
     background-color: var(--background);
-    width: 95%;
-    max-width: 1800px;
-    margin: 60px auto;
-    transform-origin: top left;
-}
-
-/* Add viewport-based zoom */
-@media screen and (max-width: 1800px) {
-    body {
-        transform: scale(calc(100vw / 1800));
-        width: 1800px;
-    }
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
 
 /* Hero Section */
@@ -70,6 +57,7 @@ body {
     padding: var(--space-xl) 0;
     overflow: hidden;
     min-height: 500px;
+    width: 100%;
 }
 
 /* Neuer Style für das Logo */
@@ -102,15 +90,14 @@ body {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 95%;
-    width: 1800px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 var(--space-md);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 500px; /* Neue Mindesthöhe */
+    min-height: 500px;
 }
 
 .conference-title {
@@ -150,14 +137,11 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 95%;
-    max-width: 1800px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .nav-container {
-    max-width: 95%;
-    width: 1800px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 var(--space-sm);
     display: flex;
@@ -189,10 +173,9 @@ body {
     list-style: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    width: 100%;
-    flex-wrap: nowrap;
 }
 
 .nav-list li {
@@ -200,13 +183,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    white-space: nowrap;
 }
 
 .nav-list a,
 .dropdown-trigger {
     display: block;
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-sm) var(--space-xl);
     color: var(--text-primary);
     text-decoration: none;
     font-weight: 500;
@@ -274,7 +256,6 @@ body {
 
 /* Container */
 .container {
-    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: var(--space-md);
