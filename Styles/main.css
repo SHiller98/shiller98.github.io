@@ -60,20 +60,20 @@ body {
 @media screen and (max-width: 800px) {
     html {
         font-size: 14px;
-        zoom: 0.8; /* Zoom out on smaller screens */
-        -moz-transform: scale(0.8); /* Firefox */
+        zoom: 0.6; /* Increased zoom out on smaller screens */
+        -moz-transform: scale(0.6); /* Firefox */
         -moz-transform-origin: 0 0;
-        -o-transform: scale(0.8); /* Opera */
+        -o-transform: scale(0.6); /* Opera */
         -o-transform-origin: 0 0;
-        -webkit-transform: scale(0.8); /* Safari and Chrome */
+        -webkit-transform: scale(0.6); /* Safari and Chrome */
         -webkit-transform-origin: 0 0;
-        transform: scale(0.8); /* Standard */
+        transform: scale(0.6); /* Standard */
         transform-origin: 0 0;
     }
     
     body {
         padding: 0 var(--space-xs);
-        overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow-x: hidden;
     }
     
     .container {
