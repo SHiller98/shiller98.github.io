@@ -50,7 +50,6 @@ body {
     background-color: var(--background);
     width: 100%;
     margin: 0 auto;
-    min-width: 320px;
 }
 
 /* Navigation */
@@ -60,7 +59,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
 }
 
 .nav-container {
@@ -80,7 +78,6 @@ body {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    width: 100%;
 }
 
 .nav-list li {
@@ -88,7 +85,6 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    white-space: nowrap;
 }
 
 .nav-list a,
@@ -153,7 +149,6 @@ body {
 
 /* Hero Section */
 .hero {
-    width: 100%;
     position: relative;
     background: url('https://christianetretter.github.io/STAMP/Images/Bern.jpg') center/cover no-repeat;
     color: white;
@@ -190,16 +185,17 @@ body {
 }
 
 .hero-content {
-    width: 100%;
     position: relative;
     z-index: 2;
+    max-width: 95%;
+    width: 1800px;
     margin: 0 auto;
     padding: 0 var(--space-md);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 500px;
+    min-height: 500px; /* Neue Mindesthöhe */
 }
 
 .conference-title {
@@ -234,12 +230,11 @@ body {
 
 /* Main Content */
 .main-content {
-    width: 100%;
     min-height: calc(100vh - 400px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--space-xl) 0 var(--space-md) 0;
+    padding: var(--space-xl) 0 var(--space-md) 0;  /* Mehr Abstand oben (var(--space-xl)), weniger unten (var(--space-md)) */
 }
 
 .welcome-section {
@@ -534,7 +529,6 @@ body {
 
 /* Footer */
 .main-footer {
-    width: 100%;
     background: #f0f4f8;
     color: var(--text-primary);
     padding: var(--space-md) 0;
@@ -543,7 +537,8 @@ body {
 }
 
 .footer-content {
-    width: 100%;
+    max-width: 95%;
+    width: 1800px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr) auto;
