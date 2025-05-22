@@ -49,41 +49,38 @@ body {
     line-height: 1.6;
     background-color: var(--background);
     width: 100%;
+    min-width: 800px; /* Added minimum width to prevent menu wrapping */
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0;
-    overflow-x: hidden;
+    padding: 0 var(--space-sm);
+    overflow-x: auto; /* Changed from hidden to auto to allow horizontal scrolling if needed */
 }
 
 /* Media Queries for Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     html {
         font-size: 14px;
+        zoom: 0.8; /* Zoom out on smaller screens */
+        -moz-transform: scale(0.8); /* Firefox */
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.8); /* Opera */
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.8); /* Safari and Chrome */
+        -webkit-transform-origin: 0 0;
+        transform: scale(0.8); /* Standard */
+        transform-origin: 0 0;
     }
     
     body {
-        padding: 0;
-        overflow-x: hidden;
-    }
-    
-    .main-nav {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .nav-container {
-        width: 95%;
-        min-width: 800px;
+        padding: 0 var(--space-xs);
+        overflow-x: hidden; /* Hide horizontal scrollbar */
     }
     
     .container {
-        width: 95%;
-        margin: 0 auto;
         padding: var(--space-xs);
     }
     
     .hero-content {
-        width: 95%;
-        margin: 0 auto;
         padding: 0 var(--space-xs);
     }
     
@@ -206,20 +203,18 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
-    overflow-x: auto; /* Allow horizontal scrolling for nav if needed */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    min-width: 800px; /* Added minimum width to match body */
 }
 
 .nav-container {
-    width: 95%;
-    min-width: 800px; /* Minimum width to ensure all nav items fit */
+    max-width: 95%;
+    width: 1800px;
     margin: 0 auto;
     padding: 0 var(--space-sm);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevent text wrapping in nav */
 }
 
 /* Hamburger Menu Button */
@@ -246,10 +241,9 @@ body {
     list-style: none;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    width: 100%;
 }
 
 .nav-list li {
@@ -257,13 +251,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    white-space: nowrap;
 }
 
 .nav-list a,
 .dropdown-trigger {
     display: block;
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-sm) var(--space-xl);
     color: var(--text-primary);
     text-decoration: none;
     font-weight: 500;
