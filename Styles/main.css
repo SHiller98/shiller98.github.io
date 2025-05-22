@@ -150,7 +150,7 @@ body {
 
 /* Hamburger Menu Button */
 .menu-toggle {
-    display: none;
+    display: block;
     background: none;
     border: none;
     cursor: pointer;
@@ -168,80 +168,63 @@ body {
 }
 
 .nav-list {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    padding: 60px var(--space-md) var(--space-md);
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.nav-list.active {
     display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
 }
 
 .nav-list li {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    width: 100%;
 }
 
 .nav-list a,
 .dropdown-trigger {
-    display: block;
-    padding: var(--space-sm) var(--space-xl);
-    color: var(--text-primary);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    white-space: nowrap;
-    font-family: 'Roboto Slab', serif;
-    font-size: 1rem;
-}
-
-.nav-list a:hover,
-.nav-list a.active,
-.dropdown-trigger:hover {
-    color: var(--primary);
-}
-
-/* Dropdown */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-trigger {
-    background: none;
-    border: none;
-    cursor: pointer;
+    padding: var(--space-sm) 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    padding-left: var(--space-md);
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    min-width: 200px;
-    box-shadow: var(--shadow-md);
-    border-radius: 4px;
-    padding: var(--space-xs) 0;
-    margin: 0;
-    list-style: none;
 }
 
-.dropdown-menu li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.dropdown-menu.active {
+    display: block;
 }
 
 .dropdown-menu a {
-    padding: var(--space-xs) var(--space-md);
-    font-size: 0.9rem;
-    font-family: 'Roboto Slab', serif;
+    padding: var(--space-xs) 0;
+    border-bottom: none;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
+/* Hamburger Animation */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
 }
 
 /* Main Content */
