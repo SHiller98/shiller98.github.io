@@ -651,7 +651,8 @@ body {
 .main-footer {
     background: #f0f4f8;
     color: var(--text-primary);
-    padding: var(--space-lg) 0;
+    padding: var(--space-md) 0;
+    font-size: 0.85rem;
     margin-top: auto;
 }
 
@@ -659,40 +660,33 @@ body {
     max-width: 95%;
     width: 1800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: var(--space-xl);
     padding: 0 var(--space-lg);
-    display: flex;
-    align-items: center;
-    gap: var(--space-xl);
-}
-
-.footer-sections {
-    display: flex;
-    gap: var(--space-xl);
-    flex: 1;
 }
 
 .footer-section {
-    flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: var(--space-xs);
 }
 
 .footer-section h4 {
     color: #1a237e;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: var(--space-xs);
     font-weight: 500;
-    height: 24px;
-    display: flex;
-    align-items: center;
+    opacity: 1;
 }
 
 .footer-section ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: var(--space-xs);
+    text-align: left;
+    flex-grow: 1;
 }
 
 .footer-section ul li {
@@ -704,81 +698,127 @@ body {
     color: #666;
     text-decoration: none;
     transition: color 0.2s ease;
-    font-size: 0.9rem;
-    line-height: 1.4;
+    font-size: 0.85rem;
 }
 
 .footer-section a:hover {
     color: #000;
 }
 
-.footer-divider {
-    width: 2px;
-    height: 100px;
-    background: #52739e;
-    opacity: 0.3;
-    margin: 0 var(--space-lg);
-}
-
 .footer-logos {
     display: flex;
-    gap: var(--space-xl);
+    flex-direction: row;
     align-items: center;
-    height: 100px;
+    gap: var(--space-xl);
+    padding-left: var(--space-lg);
+    position: relative;
+}
+
+.footer-logos::before {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #52739e;
+    opacity: 1;
 }
 
 .footer-logo {
-    height: 70px;
+    height: 80px;
     width: auto;
     opacity: 0.7;
     transition: opacity 0.2s ease;
 }
 
-.footer-logo:hover {
-    opacity: 1;
-}
-
 /* Mobile Footer Styles */
 @media screen and (max-width: 800px) {
     .footer-content {
-        padding: 0 var(--space-md);
-        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
         gap: var(--space-md);
-    }
-
-    .footer-sections {
-        flex-direction: row;
-        gap: var(--space-md);
+        padding: 0 var(--space-sm);
+        width: 166.67%; /* Compensate for zoom */
     }
 
     .footer-section {
-        padding: 0;
+        width: 100%;
+        padding: var(--space-sm) 0;
+    }
+
+    .footer-section:nth-child(3) {
+        grid-column: 1 / -1;
+        border-top: 1px solid var(--border-color);
+        padding-top: var(--space-md);
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+        margin-bottom: var(--space-sm);
+    }
+
+    .footer-section ul {
+        width: 100%;
+    }
+
+    .footer-section ul li {
+        margin-bottom: var(--space-sm);
+    }
+
+    .footer-section a {
+        font-size: 0.9rem;
+    }
+
+    .footer-logos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--space-md);
+        padding-left: 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .footer-logos::before {
+        display: none;
+    }
+
+    .footer-logo {
+        height: 60px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        padding: 0 var(--space-xs);
+    }
+
+    .footer-section {
+        padding: var(--space-xs) 0;
+    }
+
+    .footer-section:nth-child(3) {
+        grid-column: auto;
+        border-top: none;
+        padding-top: var(--space-xs);
     }
 
     .footer-section h4 {
         font-size: 1rem;
-        height: 22px;
     }
 
     .footer-section a {
         font-size: 0.85rem;
     }
 
-    .footer-divider {
-        width: 2px;
-        height: 100px;
-        margin: 0 var(--space-md);
-    }
-
     .footer-logos {
-        flex-direction: column;
-        gap: var(--space-lg);
-        height: 100px;
         justify-content: center;
     }
 
     .footer-logo {
-        height: 60px;
+        height: 50px;
     }
 }
 
