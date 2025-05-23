@@ -553,6 +553,28 @@ body {
     color: white;
 }
 
+/* Mobile Feature Cards */
+@media screen and (max-width: 800px) {
+    .feature-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--space-md);
+    }
+
+    .feature-card {
+        padding: var(--space-md);
+        min-height: 120px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: var(--space-sm);
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+}
+
 /* Timetable Container */
 .timetable-grid {
     display: grid;
