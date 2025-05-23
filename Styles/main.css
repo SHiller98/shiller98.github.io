@@ -341,11 +341,11 @@ body {
     font-family: 'Roboto Slab', serif;
     display: block;
     background: white;
+    margin: 2px 0;  /* Added small margin between items */
 }
 
 .dropdown-menu a:hover {
-    background-color: var(--background-alt);
-    padding: calc(var(--space-xs) - 2px) var(--space-md);  /* Slightly reduced padding on hover */
+    background-color: var(--background-alt); /* Added hover effect */
 }
 
 .dropdown:hover .dropdown-menu {
@@ -951,8 +951,8 @@ th,td{
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
-  font-size: 0.8em;
+  padding: 8px 16px;  /* Reduced from 12px 16px */
+  font-size: 1rem;  /* Increased from 0.8em */
   text-decoration: none;
   display: block;
 }
@@ -1452,33 +1452,12 @@ th,td{
 @media screen and (max-width: 800px) {
     .nav-list a,
     .dropdown-trigger {
-        padding: var(--space-sm) var(--space-sm);
-        font-size: 1rem;
+        padding: var(--space-sm) var(--space-sm);  /* Reduced padding for mobile */
+        font-size: 1rem;  /* Reduced font size for mobile */
     }
 
     .nav-container {
-        padding: 0 var(--space-xs);
-    }
-
-    .dropdown-menu {
-        display: none;  /* Hide by default on mobile */
-        position: static;  /* Change to static positioning on mobile */
-        box-shadow: none;
-        background: var(--background-alt);
-        width: 100%;
-    }
-
-    .dropdown-menu.active {
-        display: block;  /* Show when active class is present */
-    }
-
-    .dropdown-menu a {
-        padding: calc(var(--space-xs) - 4px) var(--space-md);
-        font-size: 0.95rem;
-    }
-
-    .dropdown-menu a:hover {
-        padding: calc(var(--space-xs) - 6px) var(--space-md);
+        padding: 0 var(--space-xs);  /* Reduced container padding for mobile */
     }
 }
 
