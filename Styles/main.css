@@ -1459,5 +1459,16 @@ th,td{
     .nav-container {
         padding: 0 var(--space-xs);  /* Reduced container padding for mobile */
     }
+
+    .dropdown-menu a {
+        padding: 4px var(--space-sm);  /* Reduced padding for mobile dropdown items */
+        font-size: 0.95rem;  /* Slightly smaller font for mobile dropdown */
+        margin: 1px 0;  /* Reduced margin between items */
+    }
+
+    .dropdown-content a {
+        padding: 4px 12px;  /* Reduced padding for mobile dropdown items */
+        font-size: 0.95rem;  /* Slightly smaller font for mobile dropdown */
+    }
 }
 
