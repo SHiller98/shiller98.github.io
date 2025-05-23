@@ -794,7 +794,7 @@ body {
         padding: 0;
         width: 25%;
         border-top: none;
-        border-left: 1px solid var(--border-color);
+        border-left: 1px solid var(--primary);
     }
 
     .footer-logos::before {
