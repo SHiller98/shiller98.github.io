@@ -1400,32 +1400,37 @@ th,td{
 
     .committee-card {
         min-height: 100px;
-        padding: var(--space-xs);
-        height: auto; /* Allow dynamic height */
+        padding: var(--space-xs) var(--space-sm); /* Equal horizontal padding */
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .committee-name {
         font-size: 1em;
-        height: auto; /* Remove fixed height */
+        height: auto;
         min-height: 2.8em;
-        max-height: 4.2em; /* Allow for 3 lines (1.4em * 3) */
-        -webkit-line-clamp: 3; /* Allow 3 lines */
+        max-height: 4.2em;
+        -webkit-line-clamp: 3;
         line-height: 1.4;
         margin-bottom: var(--space-xs);
+        flex: 1; /* Take up remaining space */
     }
 
     .committee-role {
         font-size: 0.85em;
-        position: relative; /* Change to relative positioning */
+        position: relative;
         top: auto;
         left: auto;
         right: auto;
-        margin-top: var(--space-xs);
+        margin-top: auto; /* Push to bottom of flex container */
+        padding-top: var(--space-xs);
     }
 
     .committee-role + .committee-role {
         margin-top: 0;
         top: auto;
+        padding-top: 0;
     }
 }
 
