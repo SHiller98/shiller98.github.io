@@ -325,31 +325,70 @@ body {
     padding: var(--space-xs) 0;
     margin: 0;
     list-style: none;
-    z-index: 2000; /* Increased z-index to ensure it's above other content */
+    z-index: 2000;
 }
 
 .dropdown-menu li {
     margin: 0;
     padding: 0;
     list-style: none;
-    position: relative; /* Added to ensure proper stacking context */
+    position: relative;
 }
 
 .dropdown-menu a {
     padding: var(--space-xs) var(--space-md);
-    font-size: 1rem;  /* Increased from 0.9rem */
+    font-size: 1rem;
     font-family: 'Roboto Slab', serif;
     display: block;
     background: white;
-    margin: 2px 0;  /* Added small margin between items */
+    margin: 2px 0;
 }
 
 .dropdown-menu a:hover {
-    background-color: var(--background-alt); /* Added hover effect */
+    background-color: var(--background-alt);
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown-menu.active {
     display: block;
+}
+
+/* Desktop hover behavior */
+@media screen and (min-width: 801px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* Mobile Navigation Styles */
+@media screen and (max-width: 800px) {
+    .dropdown:hover .dropdown-menu {
+        display: none; /* Disable hover on mobile */
+    }
+    
+    .dropdown-menu.active {
+        display: block;
+    }
+    
+    .nav-list a,
+    .dropdown-trigger {
+        padding: var(--space-sm) var(--space-sm);
+        font-size: 1rem;
+    }
+
+    .nav-container {
+        padding: 0 var(--space-xs);
+    }
+
+    .dropdown-menu a {
+        padding: 4px var(--space-sm);
+        font-size: 0.95rem;
+        margin: 1px 0;
+    }
+
+    .dropdown-content a {
+        padding: 4px 12px;
+        font-size: 0.95rem;
+    }
 }
 
 /* Main Content */
@@ -1445,30 +1484,6 @@ th,td{
     .committee-role + .committee-role {
         top: 6em;
         padding-top: 0;
-    }
-}
-
-/* Mobile Navigation Styles */
-@media screen and (max-width: 800px) {
-    .nav-list a,
-    .dropdown-trigger {
-        padding: var(--space-sm) var(--space-sm);  /* Reduced padding for mobile */
-        font-size: 1rem;  /* Reduced font size for mobile */
-    }
-
-    .nav-container {
-        padding: 0 var(--space-xs);  /* Reduced container padding for mobile */
-    }
-
-    .dropdown-menu a {
-        padding: 4px var(--space-sm);  /* Reduced padding for mobile dropdown items */
-        font-size: 0.95rem;  /* Slightly smaller font for mobile dropdown */
-        margin: 1px 0;  /* Reduced margin between items */
-    }
-
-    .dropdown-content a {
-        padding: 4px 12px;  /* Reduced padding for mobile dropdown items */
-        font-size: 0.95rem;  /* Slightly smaller font for mobile dropdown */
     }
 }
 
