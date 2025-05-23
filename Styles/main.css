@@ -293,9 +293,13 @@ body {
 }
 
 .nav-list a:hover,
-.nav-list a.active,
 .dropdown-trigger:hover {
     color: var(--primary);
+}
+
+.nav-list a.active {
+    color: var(--primary);
+    font-weight: 600;
 }
 
 /* Dropdown */
