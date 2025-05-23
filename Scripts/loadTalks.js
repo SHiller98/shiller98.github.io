@@ -12,6 +12,8 @@ function loadTalks() {
             talks.forEach(talk => {
                 const talkCard = document.createElement('div');
                 talkCard.className = 'talk-card';
+                // Replace \\ with <br> in the abstract
+                const formattedAbstract = talk.abstract.replace(/\\\\/g, '<br>');
                 talkCard.innerHTML = `
                     <div class="talk-header" onclick="toggleAbstract(this)">
                         <div class="talk-info">
@@ -26,7 +28,7 @@ function loadTalks() {
                         </div>
                     </div>
                     <div class="talk-abstract math-tex">
-                        <p>${talk.abstract}</p>
+                        <p>${formattedAbstract}</p>
                     </div>
                 `;
                 container.appendChild(talkCard);
@@ -101,11 +103,9 @@ function toggleAbstract(element) {
 
     // Re-render LaTeX when opening the abstract
     if (abstract.classList.contains('active') && window.MathJax) {
-        MathJax.typesetPromise([abstract]).catch(function (err) {
-            console.log('MathJax error: ' + err.message);
-        });
+        MathJax.typesetPromise([abstract]);
     }
 }
 
 // Load talks when the page loads
-document.addEventListener('DOMContentLoaded', loadTalks); 
+window.addEventListener('load', loadTalks); 

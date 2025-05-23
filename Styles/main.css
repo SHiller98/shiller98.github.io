@@ -375,8 +375,8 @@ body {
 .talks-container {
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
-    margin: var(--space-md) 0;
+    gap: var(--space-sm);
+    margin: var(--space-sm) 0;
     width: 100%;
 }
 
@@ -384,7 +384,7 @@ body {
     background: white;
     border-radius: 8px;
     box-shadow: var(--shadow-sm);
-    padding: var(--space-md);
+    padding: var(--space-sm);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -394,7 +394,7 @@ body {
 }
 
 .talk-header {
-    padding: var(--space-md);
+    padding: var(--space-sm);
     background: var(--background-alt);
     cursor: pointer;
     display: flex;
@@ -436,7 +436,8 @@ body {
     align-items: center;
     color: var(--text-secondary);
     font-size: 0.9em;
-    max-width: 50%; /* Nur die Meta-Informationen sind auf 50% begrenzt */
+    max-width: 80%; /* Increased from 50% to 70% to prevent line breaks */
+    gap: var(--space-md); /* Added gap between author and time */
 }
 
 .talk-author {
@@ -455,7 +456,7 @@ body {
 }
 
 .talk-abstract {
-    padding: 0 var(--space-md);
+    padding: 0 var(--space-sm);
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -463,13 +464,14 @@ body {
 }
 
 .talk-abstract.active {
-    padding: var(--space-md);
+    padding: var(--space-sm);
     max-height: none;
 }
 
 .talk-abstract p {
     margin: 0;
     line-height: 1.6;
+    white-space: pre-wrap; /* This preserves line breaks */
 }
 
 /* Ensure MathJax elements don't overflow */
@@ -477,12 +479,14 @@ body {
     max-width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
+    white-space: pre-wrap; /* This preserves line breaks in LaTeX */
 }
 
 .talk-abstract .MathJax_Display {
     margin: 1em 0;
     overflow-x: auto;
     overflow-y: hidden;
+    white-space: pre-wrap; /* This preserves line breaks in LaTeX */
 }
 
 .talk-header.active .toggle-icon {
