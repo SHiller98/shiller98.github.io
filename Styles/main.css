@@ -816,7 +816,7 @@ body {
         padding: 0;
         width: 25%;
         border-top: none;
-        border-left: 1px solid color-mix(in srgb, var(--primary) 70%, transparent);
+        border-left: 1px solid color-mix(in srgb, var(--primary) 50%, transparent);
     }
 
     .footer-logos::before {
@@ -1388,5 +1388,34 @@ th,td{
     margin-top: 0;
     padding-top: 0;
     top: 6.4em; /* Adjusted position for second role */
+}
+
+/* Mobile Committee Cards */
+@media screen and (max-width: 800px) {
+    .committee-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: var(--space-sm);
+        justify-content: center;
+    }
+
+    .committee-card {
+        min-height: 100px;
+        padding: var(--space-xs);
+    }
+
+    .committee-name {
+        font-size: 1em;
+        height: 2.8em;
+        line-height: 1.2;
+    }
+
+    .committee-role {
+        font-size: 0.85em;
+        top: 4.2em;
+    }
+
+    .committee-role + .committee-role {
+        top: 5.2em;
+    }
 }
 
