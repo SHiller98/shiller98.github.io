@@ -735,19 +735,20 @@ body {
 /* Mobile Footer Styles */
 @media screen and (max-width: 800px) {
     .footer-content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: var(--space-md);
         padding: 0 var(--space-sm);
-        width: 166.67%; /* Compensate for zoom */
+        width: 100%;
     }
 
     .footer-section {
         width: 100%;
         padding: var(--space-sm) 0;
+        text-align: center;
     }
 
     .footer-section:nth-child(3) {
-        grid-column: 1 / -1;
+        grid-column: 1;
         border-top: 1px solid var(--border-color);
         padding-top: var(--space-md);
     }
@@ -759,6 +760,7 @@ body {
 
     .footer-section ul {
         width: 100%;
+        text-align: center;
     }
 
     .footer-section ul li {
@@ -773,10 +775,11 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
         gap: var(--space-md);
-        padding-left: 0;
+        padding: var(--space-md) 0;
         width: 100%;
-        justify-content: flex-start;
+        border-top: 1px solid var(--border-color);
     }
 
     .footer-logos::before {
@@ -784,43 +787,17 @@ body {
     }
 
     .footer-logo {
-        height: 60px;
-        margin-bottom: 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-        padding: 0 var(--space-xs);
-    }
-
-    .footer-section {
-        padding: var(--space-xs) 0;
-    }
-
-    .footer-section:nth-child(3) {
-        grid-column: auto;
-        border-top: none;
-        padding-top: var(--space-xs);
-    }
-
-    .footer-section h4 {
-        font-size: 1rem;
-    }
-
-    .footer-section a {
-        font-size: 0.85rem;
-    }
-
-    .footer-logos {
-        justify-content: center;
-    }
-
-    .footer-logo {
         height: 50px;
+        width: auto;
+        margin: 0;
+        transition: transform 0.2s ease;
+    }
+
+    .footer-logo:hover {
+        transform: scale(1.05);
     }
 }
+
 
 @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
 
