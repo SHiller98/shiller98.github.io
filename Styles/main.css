@@ -816,7 +816,7 @@ body {
         padding: 0;
         width: 25%;
         border-top: none;
-        border-left: 1px solid var(--primary);
+        border-left: 1px solid color-mix(in srgb, var(--primary) 70%, transparent);
     }
 
     .footer-logos::before {
