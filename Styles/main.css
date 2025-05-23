@@ -1400,7 +1400,7 @@ th,td{
 
     .committee-card {
         min-height: 100px;
-        padding: var(--space-xs) var(--space-sm); /* Equal horizontal padding */
+        padding: var(--space-xs) var(--space-sm);
         height: auto;
         display: flex;
         flex-direction: column;
@@ -1414,7 +1414,6 @@ th,td{
         -webkit-line-clamp: 3;
         line-height: 1.4;
         margin-bottom: var(--space-xs);
-        flex: 1; /* Take up remaining space */
     }
 
     .committee-role {
@@ -1423,8 +1422,8 @@ th,td{
         top: auto;
         left: auto;
         right: auto;
-        margin-top: auto; /* Push to bottom of flex container */
-        padding-top: var(--space-xs);
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .committee-role + .committee-role {
