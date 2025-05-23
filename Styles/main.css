@@ -282,7 +282,7 @@ body {
 .nav-list a,
 .dropdown-trigger {
     display: block;
-    padding: var(--space-md) var(--space-md);
+    padding: var(--space-sm) var(--space-md);
     color: var(--text-primary);
     text-decoration: none;
     font-weight: 500;
@@ -337,14 +337,15 @@ body {
 
 .dropdown-menu a {
     padding: var(--space-xs) var(--space-md);
-    font-size: 0.9rem;
+    font-size: 1rem;  /* Increased from 0.9rem */
     font-family: 'Roboto Slab', serif;
-    display: block; /* Added to make the entire area clickable */
-    background: white; /* Added to ensure the background is solid */
+    display: block;
+    background: white;
 }
 
 .dropdown-menu a:hover {
-    background-color: var(--background-alt); /* Added hover effect */
+    background-color: var(--background-alt);
+    padding: calc(var(--space-xs) - 2px) var(--space-md);  /* Slightly reduced padding on hover */
 }
 
 .dropdown:hover .dropdown-menu {
@@ -1451,12 +1452,33 @@ th,td{
 @media screen and (max-width: 800px) {
     .nav-list a,
     .dropdown-trigger {
-        padding: var(--space-md) var(--space-sm);  /* Reduced padding for mobile */
-        font-size: 1rem;  /* Reduced font size for mobile */
+        padding: var(--space-sm) var(--space-sm);
+        font-size: 1rem;
     }
 
     .nav-container {
-        padding: 0 var(--space-xs);  /* Reduced container padding for mobile */
+        padding: 0 var(--space-xs);
+    }
+
+    .dropdown-menu {
+        display: none;  /* Hide by default on mobile */
+        position: static;  /* Change to static positioning on mobile */
+        box-shadow: none;
+        background: var(--background-alt);
+        width: 100%;
+    }
+
+    .dropdown-menu.active {
+        display: block;  /* Show when active class is present */
+    }
+
+    .dropdown-menu a {
+        padding: calc(var(--space-xs) - 4px) var(--space-md);
+        font-size: 0.95rem;
+    }
+
+    .dropdown-menu a:hover {
+        padding: calc(var(--space-xs) - 6px) var(--space-md);
     }
 }
 
