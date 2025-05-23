@@ -1401,14 +1401,14 @@ th,td{
     }
 
     .committee-card {
-        min-height: 130px; /* Increased for more bottom padding */
+        min-height: 160px; /* Increased for more bottom padding */
         padding: var(--space-xs) var(--space-sm);
         height: 100%;
         position: relative;
     }
 
     .committee-name {
-        font-size: 1em;
+        font-size: 0.8em;
         height: auto;
         min-height: 2.8em;
         max-height: 4.2em;
