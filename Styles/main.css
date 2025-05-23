@@ -135,7 +135,7 @@ body {
     position: relative;
     background: url('https://christianetretter.github.io/STAMP/Images/Bern.jpg') center/cover no-repeat;
     color: white;
-    padding: var(--space-xl) 0;
+    padding: var(--space-lg) 0;
     overflow: hidden;
     min-height: 500px;
 }
@@ -197,12 +197,13 @@ body {
 .title-line:first-child {
     color: var(--accent);
     margin-bottom: var(--space-xs);
+    font-size: 0.85em;
 }
 
 .title-line:last-child {
     color: white;
     opacity: 0.95;
-    font-size: 0.9em;
+    font-size: 0.75em;
 }
 
 .conference-details {
