@@ -813,7 +813,7 @@ body {
         align-items: center;
         justify-content: center;
         gap: var(--space-xs);
-        padding: 15% 0;
+        padding: -15% 0;
         width: 25%;
         border-top: none;
         border-left: 1px solid color-mix(in srgb, var(--primary) 50%, transparent);
