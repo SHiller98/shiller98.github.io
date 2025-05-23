@@ -1401,21 +1401,31 @@ th,td{
     .committee-card {
         min-height: 100px;
         padding: var(--space-xs);
+        height: auto; /* Allow dynamic height */
     }
 
     .committee-name {
         font-size: 1em;
-        height: 2.8em;
-        line-height: 1.2;
+        height: auto; /* Remove fixed height */
+        min-height: 2.8em;
+        max-height: 4.2em; /* Allow for 3 lines (1.4em * 3) */
+        -webkit-line-clamp: 3; /* Allow 3 lines */
+        line-height: 1.4;
+        margin-bottom: var(--space-xs);
     }
 
     .committee-role {
         font-size: 0.85em;
-        top: 4.2em;
+        position: relative; /* Change to relative positioning */
+        top: auto;
+        left: auto;
+        right: auto;
+        margin-top: var(--space-xs);
     }
 
     .committee-role + .committee-role {
-        top: 5.2em;
+        margin-top: 0;
+        top: auto;
     }
 }
 
