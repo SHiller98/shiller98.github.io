@@ -211,10 +211,11 @@ body {
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     margin-left: auto;
-    margin-right: 40%;
+    margin-right: 70%;
     max-width: 100%;
     text-align: right;
-    margin-top: var(--space-lg);  /* Added margin-top to create more space after title lines */
+    margin-top: var(--space-lg);
+    white-space: nowrap;  /* Prevent line breaks */
 }
 
 .conference-details p {
