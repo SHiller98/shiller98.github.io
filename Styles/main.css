@@ -1397,13 +1397,13 @@ th,td{
         gap: var(--space-sm);
         justify-content: center;
         display: grid;
-        grid-auto-rows: 1fr; /* Make all cards in a row the same height */
+        grid-auto-rows: 1fr;
     }
 
     .committee-card {
         min-height: 100px;
         padding: var(--space-xs) var(--space-sm);
-        height: 100%; /* Fill the grid cell */
+        height: 100%;
         position: relative;
     }
 
@@ -1420,13 +1420,13 @@ th,td{
     .committee-role {
         font-size: 0.85em;
         position: absolute;
-        top: 4.2em; /* Fixed position from top */
-        left: var(--space-sm);
-        right: var(--space-sm);
+        top: 4.2em;
+        left: var(--space-xs);
+        right: var(--space-xs);
     }
 
     .committee-role + .committee-role {
-        top: 5.2em; /* Fixed position for second role */
+        top: 5.2em;
     }
 }
 
