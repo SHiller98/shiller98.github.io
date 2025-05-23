@@ -739,8 +739,6 @@ body {
         gap: var(--space-md);
         padding: 0 var(--space-sm);
         width: 100%;
-        display: flex;
-        flex-direction: column;
     }
 
     .footer-sections-container {
