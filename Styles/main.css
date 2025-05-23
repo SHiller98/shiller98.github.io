@@ -1420,13 +1420,13 @@ th,td{
     .committee-role {
         font-size: 0.85em;
         position: absolute;
-        top: 4.2em;
-        left: var(--space-xs);
+        top: 5em; /* Increased to ensure no headings are cut off */
+        left: var(--space-sm);
         right: var(--space-xs);
     }
 
     .committee-role + .committee-role {
-        top: 5.2em;
+        top: 6em; /* Adjusted accordingly */
     }
 }
 
