@@ -1401,7 +1401,7 @@ th,td{
     }
 
     .committee-card {
-        min-height: 120px; /* Increased to accommodate padding */
+        min-height: 130px; /* Increased for more bottom padding */
         padding: var(--space-xs) var(--space-sm);
         height: 100%;
         position: relative;
@@ -1423,12 +1423,12 @@ th,td{
         top: 5em;
         left: var(--space-sm);
         right: var(--space-xs);
-        padding: var(--space-xs) 0;
+        padding: 2px 0; /* Minimal padding */
     }
 
     .committee-role + .committee-role {
         top: 6em;
-        padding-top: 0; /* Remove padding between roles */
+        padding-top: 0;
     }
 }
 
