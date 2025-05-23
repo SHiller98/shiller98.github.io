@@ -207,12 +207,17 @@ body {
 }
 
 .conference-details {
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     margin-left: auto;
+    margin-right: 10%;  /* Added right margin to indent from the right edge */
     max-width: 60%;
     text-align: right;
+}
+
+.conference-details p {
+    margin: 0.5em 0;  /* Reduced from default margin to create smaller spacing between lines */
 }
 
 /* Navigation */
