@@ -1017,7 +1017,7 @@ th,td{
 .participant-affiliation {
     color: var(--text-secondary);
     margin: 0;
-    padding: 0 0 0 120px;  /* Increased from 80px */
+    padding: 0 0 0 80px;  /* Increased from 80px */
     font-size: 0.85em;
     white-space: nowrap;
     overflow: hidden;
@@ -1470,6 +1470,25 @@ th,td{
     .dropdown-content a {
         padding: 4px 12px;  /* Reduced padding for mobile dropdown items */
         font-size: 0.95rem;  /* Slightly smaller font for mobile dropdown */
+    }
+}
+
+/* Mobile Participant Cards */
+@media screen and (max-width: 800px) {
+    .participant-card {
+        padding: 2px 4px;
+        gap: 20px;  /* Reduced gap for mobile */
+    }
+
+    .participant-card h5 {
+        min-width: 120px;  /* Reduced min-width for mobile */
+        max-width: 120px;  /* Added max-width to ensure consistent width */
+    }
+
+    .participant-affiliation {
+        padding-left: 80px;  /* Reduced padding for mobile */
+        min-width: 0;  /* Allow shrinking */
+        flex: 1;
     }
 }
 
