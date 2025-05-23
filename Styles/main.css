@@ -993,7 +993,7 @@ th,td{
     line-height: 1;
     display: flex;
     align-items: center;
-    gap: 30px;  /* Increased from 4px */
+    gap: 30px;
     font-size: 0.85em;
 }
 
@@ -1011,13 +1011,13 @@ th,td{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    min-width: 140px;  /* Increased from 100px */
+    min-width: 140px;
 }
 
 .participant-affiliation {
     color: var(--text-secondary);
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 60px;  /* Added left padding */
     font-size: 0.85em;
     white-space: nowrap;
     overflow: hidden;
