@@ -1477,18 +1477,17 @@ th,td{
 @media screen and (max-width: 800px) {
     .participant-card {
         padding: 2px 4px;
-        gap: 20px;
+        gap: 20px;  /* Reduced gap for mobile */
     }
 
     .participant-card h5 {
-        min-width: 100px;  /* Reduced from 120px */
-        max-width: 100px;  /* Reduced from 120px */
-        padding: 0 4px;  /* Added small horizontal padding */
+        min-width: 120px;  /* Reduced min-width for mobile */
+        max-width: 120px;  /* Added max-width to ensure consistent width */
     }
 
     .participant-affiliation {
-        padding-left: 60px;  /* Reduced from 80px */
-        min-width: 0;
+        padding-left: 80px;  /* Reduced padding for mobile */
+        min-width: 0;  /* Allow shrinking */
         flex: 1;
     }
 }
