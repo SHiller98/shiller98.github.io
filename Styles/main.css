@@ -1447,3 +1447,16 @@ th,td{
     }
 }
 
+/* Mobile Navigation Styles */
+@media screen and (max-width: 800px) {
+    .nav-list a,
+    .dropdown-trigger {
+        padding: var(--space-xs) var(--space-sm);  /* Reduced padding for mobile */
+        font-size: 1rem;  /* Reduced font size for mobile */
+    }
+
+    .nav-container {
+        padding: 0 var(--space-xs);  /* Reduced container padding for mobile */
+    }
+}
+
