@@ -282,7 +282,7 @@ body {
 .nav-list a,
 .dropdown-trigger {
     display: block;
-    padding: var(--space-xs) var(--space-xl);
+    padding: var(--space-sm) var(--space-md);
     color: var(--text-primary);
     text-decoration: none;
     font-weight: 500;
