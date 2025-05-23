@@ -993,7 +993,7 @@ th,td{
     line-height: 1;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 12px;  /* Increased from 4px */
     font-size: 0.85em;
 }
 
@@ -1011,7 +1011,7 @@ th,td{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    min-width: 100px;
+    min-width: 140px;  /* Increased from 100px */
 }
 
 .participant-affiliation {
@@ -1141,7 +1141,7 @@ th,td{
 .download-info {
     display: flex;
     align-items: flex-start;
-    gap: var(--space-xl);
+    gap: var(--space-xl);  /* Increased from var(--space-xl) */
     flex: 1;
     padding-right: var(--space-md);
 }
@@ -1152,7 +1152,7 @@ th,td{
     font-size: 1.2em;
     margin: 0;
     font-weight: 600;
-    min-width: 250px; /* Increased width for title */
+    min-width: 280px;  /* Increased from 250px */
 }
 
 .download-description {
@@ -1160,6 +1160,7 @@ th,td{
     font-size: 0.9em;
     padding-top: 2px;
     flex: 1;
+    margin-left: var(--space-sm);  /* Added margin to create more space */
 }
 
 .download-icon {
