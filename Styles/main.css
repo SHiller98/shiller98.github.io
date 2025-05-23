@@ -1401,7 +1401,7 @@ th,td{
     }
 
     .committee-card {
-        min-height: 160px; /* Increased for more bottom padding */
+        min-height: 120px; /* Increased for more bottom padding */
         padding: var(--space-xs) var(--space-sm);
         height: 100%;
         position: relative;
